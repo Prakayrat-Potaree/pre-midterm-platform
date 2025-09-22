@@ -1,8 +1,25 @@
-ก่อนจะเขียนโค้ด ต้องสร้างไฟล์ spec.md (ใช้ GitHub Spec-Kit format) โดยมีเนื้อหา:
-System Context – อธิบายว่า platform/webapp คืออะไร และใครคือผู้ใช้งาน
-Functional Requirements – ฟีเจอร์ที่ระบบต้องมี เช่น CRUD, Auth, Search, Filter
-Non-functional Requirements – เรื่อง performance, usability, ข้อจำกัดต่าง ๆ
-User Stories – อย่างน้อย 2–3 เรื่อง เช่น
-“ในฐานะนักเรียน ฉันอยากลงทะเบียนเรียนได้ เพื่อที่จะ….”
-Acceptance Criteria – เงื่อนไขที่วัดได้ว่าฟีเจอร์ผ่าน เช่น
-“API ต้องส่งสถานะ 200 OK พร้อม JSON result”
+# Spec – Todo List Webapp
+
+## 1. System Context
+This is a Todo List webapp.  
+Users can manage daily tasks online (create, view, update, delete).  
+The main users are students who want to track their study tasks.
+
+## 2. Functional Requirements
+- User can create a new task with title and description
+- User can edit a task
+- User can delete a task
+- User can mark a task as completed
+
+## 3. Non-functional Requirements
+- App must load in less than 2 seconds
+- Data must persist in Firebase
+- UI must be responsive on mobile and desktop
+
+## 4. User Stories
+- As a student, I want to add a new task so that I can remember what to do.
+- As a user, I want to delete completed tasks so that my list stays clean.
+
+## 5. Acceptance Criteria
+- When I add a task, it is saved to Firebase and displayed immediately.
+- When I delete a task, it disappears and does not reappear on refresh.
